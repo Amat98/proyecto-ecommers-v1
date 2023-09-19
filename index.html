@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Academlo Store</title>
+</head>
+<body>
+    <nav class="nav">
+        
+        <section class="nav__primary">
+            <img src="./assets/img/logo_nombre_blanco.png" alt="logo-nav" class="nav__img">
+            <button class="nav__button nav__button--toggle">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </section>
+        <section class="nav__secundary">
+            <div class="nav__car" id="car">
+                <div id="car__list">
+
+                </div>
+                <button class="end">Terminar Compra</button>
+            </div>
+        </section>    
+    </nav>
+    <header class="header">
+        <img src="./assets/img/logo_mobile_header.png" alt="logo_mobile_header" class="header__img">
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+        <section class="main__section">
+            <h3 class="main__h3">Todos nuestros productos</h3>
+            <!-- Lista de productos(esto es lo que entregamos a js)-->
+            <div id="products-container" class="main__products products">
+
+            </div>
+        </section>
+        <!-- Modal -->
+        <section class="modal" id="modal-container">
+            <div class="close">
+                <ion-icon name="close-outline" class="modal__icon"></ion-icon>
+            </div>
+            <div id="modal-element" class="modal__view">
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__p">copyright 🐾 Vy-Om</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/bac096d55a.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
